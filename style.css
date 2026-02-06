@@ -1,0 +1,217 @@
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set font and background for the whole page */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* HEADER / INTRO SECTION STYLES */
+.header {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.header h2 {
+    font-size: 1.5em;
+    font-weight: normal;
+    margin-bottom: 20px;
+    color: #ecf0f1;
+}
+
+/* FOTO PROFILE - Styling untuk foto profil di header */
+/* .photoprofile {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid #3498db;
+    margin-bottom: 20px;
+    object-fit: cover;
+} */
+
+.intro-text {
+    font-size: 1.1em;
+    max-width: 600px;
+    margin: 0 auto;
+    color: #ecf0f1;
+}
+
+/* MAIN CONTAINER - Centers content and sets max width */
+.container {
+    width: 100%;
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 0 20px;
+     box-sizing: border-box; 
+}
+
+/* SECTION STYLES - Adds spacing and background to each section */
+.section {
+    background-color: white;
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* INI PENTING - Agar video tidak keluar dari kotak */
+}
+
+/* Heading styles for sections */
+.section h3 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    color: #2c3e50;
+    border-bottom: 3px solid #3498db;
+    padding-bottom: 10px;
+}
+
+/* Paragraph text in sections */
+.section p {
+    margin-bottom: 15px;
+    font-size: 1em;
+    line-height: 1.8;
+}
+
+/* SKILLS LIST STYLES */
+.skills-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.skills-list li {
+    background-color: #ecf0f1;
+    padding: 12px 20px;
+    margin-bottom: 10px;
+    border-left: 4px solid #3498db;
+    font-size: 1em;
+}
+
+/* PROJECT CARD STYLES - INI YANG PENTING! */
+.project {
+    margin-bottom: 25px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    border-left: 4px solid #27ae60;
+    overflow: hidden; /* INI PENTING - Agar video tidak keluar dari kotak */
+}
+
+/* VIDEO CONTAINER - Wrapper untuk video agar terkontrol */
+.video-container {
+    width: 100%;
+    max-width: 100%;
+    margin: 15px 0;
+    overflow: hidden; /* Agar video tidak keluar */
+}
+
+/* VIDEO STYLES - Styling untuk video itu sendiri */
+.video-project {
+    width: 100%; /* Lebar 100% dari container */
+    max-width: 100%; /* Tidak lebih dari 100% */
+    height: auto; /* Tinggi otomatis sesuai proporsi */
+    display: block; /* Block element */
+    border-radius: 5px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+video {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.project h4 {
+    font-size: 1.3em;
+    margin-bottom: 10px;
+    color: #2c3e50;
+}
+
+.project p {
+    margin-bottom: 10px;
+    line-height: 1.7;
+}
+    
+.tools {
+    color: #555;
+    font-size: 0.95em;
+}
+
+/* LINK PROJECT STYLES */
+.link-project {
+    text-decoration: none;
+    color: #555;
+    transition: all 0.3s ease;
+}
+
+.link-project:visited {
+    color: #1e40af;
+}
+
+.link-project:hover {
+    color: #1e40af;
+    text-decoration: underline;
+}
+
+/* LINK STYLES - General links */
+a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #2980b9;
+}
+
+/* FOOTER STYLES */
+.footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+.footer p {
+    font-size: 0.9em;
+}
+
+/* RESPONSIVE DESIGN - Adjusts layout for smaller screens */
+@media (max-width: 600px) {
+    .header h1 {
+        font-size: 2em;
+    }
+    
+    .header h2 {
+        font-size: 1.2em;
+    }
+    
+    .section {
+        padding: 20px;
+    }
+    
+    .section h3 {
+        font-size: 1.5em;
+    }
+    
+    .photoprofile {
+        width: 120px;
+        height: 120px;
+    }
+    
+    .project {
+        padding: 15px;
+    }
+}
