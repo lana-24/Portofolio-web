@@ -110,8 +110,15 @@ body {
 }
 
 /* VIDEO CONTAINER - Wrapper untuk video agar terkontrol */
-.video-container {
-    width: 100%;
+.video-container-hd{
+    width: 1280px;
+    max-width: 100%;
+    margin: 15px 0;
+    overflow: hidden; /* Agar video tidak keluar */
+}
+
+.video-container-fhd{
+    width: 1920px;
     max-width: 100%;
     margin: 15px 0;
     overflow: hidden; /* Agar video tidak keluar */
