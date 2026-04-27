@@ -222,3 +222,11 @@ a:hover {
         padding: 15px;
     }
 }
+
+.note {
+    color: #6c757d;  /* abu-abu */
+    font-size: 0.85em;
+    font-style: italic;
+    margin-top: 8px;
+}
+
